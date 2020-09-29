@@ -11,26 +11,60 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="row p-1 pt-2"> <!-- Reihe 1 -->
+        <div class="col border rounded"> <!-- Spalte 1.1 -->
           <h1 class="text-center">SteinSchule.Memes</h1>
           <p class="text-center">Qualitätsmemes aus der Mememanufaktur der FvSS seit 1930</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col ">
-          <nav>Nav</nav>
+      <div class="row p-1"> <!-- Reihe 2 -->
+        <div class="col border rounded"> <!-- Spalte 2.1 -->
+          <button type="button" class="btn btn-dark m-1">Zufälliges Meme</button>
+          <button class="btn btn-dark dropdown-toggle m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meme des...</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Tages</a>
+            <a class="dropdown-item" href="#">Monats</a>
+            <a class="dropdown-item" href="#">Jahres</a>
+          </div>
+          <button type="button" class="btn btn-dark m-1">Memes des...</button>
+          <button type="button" class="btn btn-dark m-1">Templates</button>
+          <button type="button" class="btn btn-dark m-1">Lehrer</button>
+          <button type="button" class="btn btn-dark m-1">Login</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col bg-success">
-          Memes
-        </div>
-        <div class="col bg-primary">
-          <div class="row-3 bg-secondary">
-            Voting
+      <div class="row p-1"> <!-- Reihe 3 -->
+        <div class="col border rounded"> <!-- Spalte 3.1 "Memes"-->
+          <img src="https://i.redd.it/aeq5km6zd2q51.jpg" class="img-fluid mt-2 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/qsldnfyg7he41.png" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/hygjwamhubh51.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/1q6m5gynk4u41.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/y0meeesjahl51.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/7if9znvrx4e51.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/5e0hp1cmezh51.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/tmiuyhl58rd51.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/cfk0sl4p9sy31.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <img src="https://i.redd.it/d6kl4ub0kbj51.jpg" class="img-fluid mt-1 border-bottom mb-1" alt="Responsive image">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gFLF300I0ps" allowfullscreen></iframe>
           </div>
-          <div class="row-9 ">
+        </div>
+        <div class="col"> <!-- Spalte 3.2 -->
+          <div class="row-3 border rounded"> <!-- Reihe 3.2.1 "Voting"-->
+            <button type="button" class="btn btn-success">Like</button>
+            <button type="button" class="btn btn-danger">Dislike</button>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="kiss" checked> Kiss
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="marry"> Marry
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="kill"> Kill
+              </label>
+            </div>
+          </div>
+          <div class="row-9 border rounded"> <!-- Reihe 3.2.2 "Comments"-->
             Comments
           </div>
         </div>
