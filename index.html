@@ -13,52 +13,48 @@
 
 <!-- ////////////////////////////// -->
 
-  <style>
-    #title{font-family: Copperplate; margin-top: 1rem; letter-spacing: .5rem}
-    #subtitle{font-family: Copperplate; margin-top: -0.8rem}
-  </style>
-
-<!-- ////////////////////////////// -->
-
   <body>
-    <div class="container-fluid bg-dark m-0">
+    <div class="container-fluid bg-dark p-2">
 
-      <div class="row p-1 pt-2"> <!-- Reihe 1 Überschrift-->
+      <div class="row m-2"> <!-- Reihe 1 Überschrift-->
         <div class="col"> <!-- Spalte 1.1 -->
-          <h1 class="text-center text-white" id="title">SteinSchule.Memes</h1>
-          <p class="text-center text-light" id="subtitle">Qualitätsmemes aus der Mememanufaktur der FvSS seit 1930</p>
+          <h1 class="text-center text-white" style="font-family: Copperplate; margin-top: 1rem; letter-spacing: .5rem">SteinSchule.Memes</h1>
+          <p class="text-center text-light" style="font-family: Copperplate; margin-top: -0.8rem">Qualitätsmemes aus der Mememanufaktur der FvSS seit 1930</p>
         </div>
       </div>
-
-      <div class="row p-1 justify-content-center"> <!-- Reihe 2 -->
-        <nav class="navbar navbar-expand-md navbar-light bg-dark">
+ <!-- Reihe 2 NavBar-->
+      <div class="row m-2 justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
           <a class="navbar-brand" href="#"><img src="https://i.ibb.co/QD3d4pJ/Fv-SSLogo-Original-WEB.png" width="30x"> Stein.Memes</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Random Meme<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Templates</a>
-              </li>
-              <li class="nav-item dropdown">
+
+              <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Meme des ...
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Tages</a>
                   <a class="dropdown-item" href="#">Monats</a>
-                  <a class="dropdown-item" href="#">Monats</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">JAHRTAUSENDS</a>
+                  <a class="dropdown-item" href="#">Jahres</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Random Meme</a>
               </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Templates</a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -68,39 +64,22 @@
         </nav>
       </div>
 
-      <div class="row p-1"> <!-- Reihe 3 -->
-        <div class="col-md-8 border rounded"> <!-- Spalte 3.1 "Memes"-->
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="row m-1 mt-3"> <!-- Reihe 3 -->
+<!-- Spalte 3.1 "Memes"-->
+        <div class="col-sm-8 p-2">
+          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-interval="1">
+                <div class="card " >
+                  <img src="https://i.redd.it/qsldnfyg7he41.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="100000000">
                 <img src="https://i.redd.it/aeq5km6zd2q51.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/qsldnfyg7he41.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/hygjwamhubh51.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/1q6m5gynk4u41.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/y0meeesjahl51.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/7if9znvrx4e51.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/5e0hp1cmezh51.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/tmiuyhl58rd51.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/cfk0sl4p9sy31.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.redd.it/d6kl4ub0kbj51.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -112,26 +91,17 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          <!-- Spicy Meme Sources: https://i.redd.it/hygjwamhubh51.jpg https://i.redd.it/1q6m5gynk4u41.jpg https://i.redd.it/y0meeesjahl51.jpg https://i.redd.it/7if9znvrx4e51.jpg https://i.redd.it/d6kl4ub0kbj51.jpg https://i.redd.it/5e0hp1cmezh51.jpg https://i.redd.it/cfk0sl4p9sy31.jpg https://i.redd.it/tmiuyhl58rd51.jpg -->
         </div>
 
-        <div class="col-md-4"> <!-- Spalte 3.2 -->
-          <div class="row-3 border rounded"> <!-- Reihe 3.2.1 "Voting"-->
-            <button type="button" class="btn btn-success">Like</button>
-            <button type="button" class="btn btn-danger">Dislike</button>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary active">
-                <input type="radio" name="options" id="kiss" checked> Kiss
-              </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="marry"> Marry
-              </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="kill"> Kill
-              </label>
-            </div>
+        <div class="col-sm-4 p-2"> <!-- Spalte 3.2 -->
+ <!-- Reihe 3.2.1 "Voting"-->
+          <div class="row-3 m-2">
+            <button type="button" class="btn btn-success">Hochwähli</button>
+            <button type="button" class="btn btn-danger">Runterwähli</button>
           </div>
-
-          <div class="row-9 border rounded"> <!-- Reihe 3.2.2 "Comments"-->
+<!-- Reihe 3.2.2 "Comments"-->
+          <div class="row-9 m-2">
             Comments
           </div>
         </div>
