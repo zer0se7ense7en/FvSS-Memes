@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <html lang=en>
   <head>
     <!-- Required meta tags -->
@@ -14,8 +12,12 @@
 <!-- ////////////////////////////// -->
 
   <body>
-    <div class="container-fluid bg-dark p-2">
 
+    <div class="container-fluid bg-dark p-2">
+      <?php
+      $txt = "HelloWorld!";
+      echo "<h2>" . $txt . "</h2>";
+      ?>
       <div class="row m-2"> <!-- Reihe 1 Überschrift-->
         <div class="col"> <!-- Spalte 1.1 -->
           <h1 class="text-center text-white" style="font-family: Copperplate; margin-top: 1rem; letter-spacing: .5rem">SteinSchule.Memes</h1>
