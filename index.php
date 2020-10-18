@@ -13,7 +13,7 @@
 
   <body>
 
-    <div class="container-fluid bg-dark p-2">
+    <div class="container-xl bg-dark p-2">
       <?php
       $txt = "HelloWorld!";
       echo "<h2>" . $txt . "</h2>";
@@ -68,7 +68,7 @@
 
       <div class="row m-1 mt-3"> <!-- Reihe 3 -->
 <!-- Spalte 3.1 "Memes"-->
-        <div class="col-sm-8 p-2">
+        <div class="col-sm-8 p-2 border">
           <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="1">
