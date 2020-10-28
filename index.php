@@ -24,10 +24,10 @@
     exit();
   }
 
-  $sql = "INSERT INTO User (Name, Passwort) VALUES ('MaxMustermann', 'passwortvonMax')"
+  $sql = "INSERT INTO User (Name, Passwort) VALUES ('MaxMustermann', 'passwortvonMax')";
 
   if($con->query($sql) === TRUE) {
-    echo "Du bist erfolgreich registriert worden"
+    echo "Du bist erfolgreich registriert worden";
   }
   else {
     echo "Du bist ein Lappen" . $con->error;
