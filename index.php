@@ -24,7 +24,7 @@
     exit();
   }
 
-  $sql = "INSERT INTO User (Name, Passwort) VALUES ('MaxMustermann', 'passwortvonMax')";
+  $sql = "INSERT INTO Users (Name, Passwort) VALUES ('MaxMustermann', 'passwortvonMax')";
 
   if($con->query($sql) === TRUE) {
     echo "Du bist erfolgreich registriert worden";
