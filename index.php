@@ -10,6 +10,16 @@
   <title>SteinSchule.Memes</title>
 </head>
 
+<?php
+  $link = new mysqli('servername', 'benutzername', 'passwort', 'datenbankname');
+
+  //Im Fehlerfall eine Fehlermeldung ausgeben
+  if (mysqli_connect_errno()) {
+    printf("Verbindung fehlgeschlagen: %s\n", mysqli_connect_error());
+    exit();
+  }
+?>
+
 <!-- ////////////////////////////// -->
 
 <body>
