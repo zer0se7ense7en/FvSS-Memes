@@ -23,6 +23,17 @@
     printf("Verbindung fehlgeschlagen: %s\n", mysqli_connect_error());
     exit();
   }
+
+  $sql = "INSERT INTO User (Name, Passwort) VALUES ('MaxMustermann', 'passwortvonMax')"
+
+  if($con->query($sql) === TRUE) {
+    echo "Du bist erfolgreich registriert worden"
+  }
+  else {
+    echo "Du bist ein Lappen" . $con->error;
+  }
+
+  $con->close();
 ?>
 
 <!-- ////////////////////////////// -->
