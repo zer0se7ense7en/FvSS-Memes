@@ -11,7 +11,12 @@
 </head>
 
 <?php
-  $link = new mysqli('servername', 'benutzername', 'passwort', 'datenbankname');
+  $servername = "localhost";
+  $benutzername = "root";
+  $passwort = "";
+  $datenbankname = "EigeneDaten";
+
+  $con = new mysqli($servername, $benutzername, $passwort, $datenbankname);
 
   //Im Fehlerfall eine Fehlermeldung ausgeben
   if (mysqli_connect_errno()) {
