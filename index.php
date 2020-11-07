@@ -24,12 +24,10 @@
     exit();
   }
 
-  $query = "SELECT id, Name, Passwort FROM Users";
+  $sql = "INSERT INTO Users (Name, Passwort) VALUES ('MaxMustermann', 'passwortvonMax')";
 
-  if($result = $link->query($query)) {
-    while($row = $result->fetch_row()) {
-      printf();
-    }
+  if($con->query($sql) === TRUE) {
+    echo "Du bist erfolgreich registriert worden";
   }
   else {
     echo "Du bist ein Lappen" . $con->error;
