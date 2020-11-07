@@ -10,6 +10,32 @@
   <title>SteinSchule.Memes</title>
 </head>
 
+<?php
+  $servername = "localhost";
+  $benutzername = "root";
+  $passwort = "";
+  $datenbankname = "EigeneDaten";
+
+  $con = new mysqli($servername, $benutzername, $passwort, $datenbankname);
+
+  //Im Fehlerfall eine Fehlermeldung ausgeben
+  if (mysqli_connect_errno()) {
+    printf("Verbindung fehlgeschlagen: %s\n", mysqli_connect_error());
+    exit();
+  }
+
+  $sql = "INSERT INTO Users (Name, Passwort) VALUES ('MaxMustermann', 'passwortvonMax')";
+
+  if($con->query($sql) === TRUE) {
+    echo "Du bist erfolgreich registriert worden";
+  }
+  else {
+    echo "Du bist ein Lappen" . $con->error;
+  }
+
+  $con->close();
+?>
+
 <!-- ////////////////////////////// -->
 
 <body>
