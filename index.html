@@ -1,13 +1,13 @@
 <html lang=DE>
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- /// <link rel="stylesheet" href="/css/Ownstyle.css"> -->
-  <title>SteinSchule.Memes</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/css/Ownstyle.css"> -->
+  <title>Stein Schule Memes - Main</title>
 </head>
 
 <?php
@@ -39,8 +39,9 @@
 <!-- ////////////////////////////// -->
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" style="max-width: 970px;">
     <div class="container-sm p-2">
+      <div class="col mr-5">
 
       <!-- Reihe 1 / Überschriftsektion -->
       <div class="row m-2">
@@ -50,14 +51,12 @@
 
           <img class="mx-auto d-block mt-4" src="https://i.ibb.co/QD3d4pJ/Fv-SSLogo-Original-WEB.png" width="100x">
 
-          <p  class="text-center text-body"
-              style="font-family: Copperplate; margin-top: 0.2rem; letter-spacing: .5rem; font-size: 40px;">
-              stein&thinsp;schule&thinsp;memes
+          <p class="text-center text-body" style="font-family: Copperplate; margin-top: 0.2rem; letter-spacing: .5rem; font-size: 40px;">
+            stein&thinsp;schule&thinsp;memes
           </p>
 
-          <p  class="text-center text-muted"
-              style="font-family: Copperplate; margin-top: -0.8rem">
-              Qualitätsmemes aus der Mememanufaktur FvS
+          <p class="text-center text-muted" style="font-family: Copperplate; margin-top: -0.8rem">
+            Qualitätsmemes aus der Mememanufaktur FvS
           </p>
 
         </div>
@@ -65,42 +64,42 @@
       </div>
 
       <!-- Reihe 2 / NavBar -->
-      <div class="row m-1">
-        <nav class="navbar navbar-expand-md navbar-light">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
           <a class="navbar-brand text-body" href="#"> NavBar</a>
           <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="https://cdn4.iconfinder.com/data/icons/core-ui-outlined/32/outlined_menu-512.png" width="25px" alt="">
+            <span class="material-icons">menu</span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
 
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle text-b" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-b text-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Meme des ...
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Tages</a>
-                  <a class="dropdown-item" href="#">Monats</a>
-                  <a class="dropdown-item" href="#">Jahres</a>
+                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-secondary" href="#">Tages</a>
+                  <a class="dropdown-item text-secondary" href="#">Monats</a>
+                  <a class="dropdown-item text-secondary" href="#">Jahres</a>
                 </div>
               </li>
 
               <li class="nav-item active">
-                <a class="nav-link" href="#">Random Meme</a>
+                <a class="nav-link text-secondary" href="#">Random Meme</a>
               </li>
 
               <li class="nav-item active">
-                <a class="nav-link" href="#">Templates</a>
+                <a class="nav-link text-secondary" href="#">Templates</a>
               </li>
 
               <li class="nav-item active">
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link text-secondary" href="login.html">Login</a>
               </li>
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <input class="form-control border-top-0 border-left-0 border-right-0 rounded-0" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn my-2 my-sm-0" type="submit"><i class="material-icons">search</i></button>
             </form>
           </div>
         </nav>
